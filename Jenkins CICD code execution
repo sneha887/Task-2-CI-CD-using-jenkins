@@ -1,0 +1,69 @@
+Started by user Sneha Ankadavar
+Checking out git https://github.com/sneha887/Task-2-CI-CD-using-jenkins.git into C:\ProgramData\Jenkins\.jenkins\workspace\jenkins_pipeline@script\9d24d48dd6116afb05bb23376855e0c9cded9fec0437e2cf48446f8d9acbb281 to read Jenkinsfile
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\jenkins_pipeline@script\9d24d48dd6116afb05bb23376855e0c9cded9fec0437e2cf48446f8d9acbb281\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/sneha887/Task-2-CI-CD-using-jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/sneha887/Task-2-CI-CD-using-jenkins.git
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.50.1.windows.1'
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/sneha887/Task-2-CI-CD-using-jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision cd1d5c266a4d723f4f272954a44b4b8597040cc1 (refs/remotes/origin/main)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f cd1d5c266a4d723f4f272954a44b4b8597040cc1 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > C:\Program Files\Git\cmd\git.exe rev-list --no-walk cd1d5c266a4d723f4f272954a44b4b8597040cc1 # timeout=10
+[Checks API] No suitable checks publisher found.
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\ProgramData\Jenkins\.jenkins\workspace\jenkins_pipeline
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\jenkins_pipeline\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/sneha887/Task-2-CI-CD-using-jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/sneha887/Task-2-CI-CD-using-jenkins.git
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.50.1.windows.1'
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/sneha887/Task-2-CI-CD-using-jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision cd1d5c266a4d723f4f272954a44b4b8597040cc1 (refs/remotes/origin/main)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f cd1d5c266a4d723f4f272954a44b4b8597040cc1 # timeout=10
+Commit message: "Update Jenkinsfile"
+[Checks API] No suitable checks publisher found.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] echo
+Building the app
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (test)
+[Pipeline] echo
+Testing the app
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] echo
+Deploying the app
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+[Checks API] No suitable checks publisher found.
+Finished: SUCCESS
